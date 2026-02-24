@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded",()=>{
 
-// Scroll animation
 const elements=document.querySelectorAll(".fade-in");
 const observer=new IntersectionObserver(entries=>{
 entries.forEach(entry=>{
@@ -11,7 +10,6 @@ entry.target.classList.add("show");
 });
 elements.forEach(el=>observer.observe(el));
 
-// Counter
 const counters=document.querySelectorAll(".counter");
 counters.forEach(counter=>{
 const update=()=>{
@@ -29,5 +27,6 @@ if(counter){
 update();
 }
 });
+
 
 });
